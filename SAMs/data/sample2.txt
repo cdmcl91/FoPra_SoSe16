@@ -1,0 +1,13 @@
+Measurement : CA-measurement
+Device : DataPhysics OCA - Series
+Customer : DataPhysics
+Sample : Not Defined
+Operator : Administrator
+Remarks : DataPhysics
+
+Run-No	CA(M)[°]	IFT[mN/m]	Err[µm]	Vol[µL]
+1	72.66	202.00	0.25	14.94
+2	70.21	213.62	0.22	14.70
+3	71.46	239.19	0.20	16.16
+4	71.41	408.53	0.08	15.25
+5	71.20	254.06	0.10	14.63

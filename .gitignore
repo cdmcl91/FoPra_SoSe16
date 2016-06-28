@@ -1,0 +1,11 @@
+*.swp
+*.swo
+*.log
+*.aux
+*.toc
+*.dvi
+*report.pdf
+*.synctex.gz
+*~
+*.out
+uncertainties*
