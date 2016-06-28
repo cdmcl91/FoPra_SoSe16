@@ -4,7 +4,8 @@ A contact angle can be defined for a triple-phase interface, where a solid, a li
 
 \subsection{Underlying Theory}
 
-A drop resting on a smooth solid surface is an example of a static equilibrium triple phase interface. The interfacial energies must therefore be in equilibrium, with gravity, and with each other. Let $\gamma_{LG}$, $\gamma_{SG}$ and $\gamma_{SL}$ be the respective liquid-gas, solid-gas and solid-liquid interfacial energies. We now consider an ideal solid-liquid-gas triple-phase boundary as depicted in figure \ref{fig:triple phase}, with $\theta$ the contact angle. Without loss of generality we consider a 2 dimensional system. To obtain the equilibrium contact angle we consider a small perturbation of the displayed system. We expand the liquid solid interface by a small distance $\Delta x$ and consider the changes in energy.
+The contact angle is a useful measure of the wetting characteristics of a material. A low contact angle characterizes a hydrophilic surface, whereas a high contact angle characterizes a hydrophobic surface. 
+A drop resting on a smooth solid surface is an example of a static equilibrium triple-phase interface. The interfacial energies must therefore be in equilibrium, with gravity, and with each other. Let $\gamma_{LG}$, $\gamma_{SG}$ and $\gamma_{SL}$ be the respective liquid-gas, solid-gas and solid-liquid interfacial energies. We now consider an ideal solid-liquid-gas triple-phase boundary as depicted in figure \ref{fig:triple phase}, with $\theta$ the contact angle. Without loss of generality we consider a 2 dimensional system. To obtain the equilibrium contact angle we consider a small perturbation of the displayed system. We expand the liquid solid interface by a small distance $\Delta x$ and consider the changes in energy.
 
 \begin{equation}
 \Delta E = \gamma_{SL}\, \Delta x + \gamma_{SG} \, ( - \Delta x) + \gamma_{LG} \cos{\theta} \, \Delta x
@@ -24,11 +25,31 @@ By eliminating the common factor $\Delta x$ we obtain a surface energy balance e
 \end{equation}
 
 Deviations from the ideal behavior associated with Young's equation can be attributed to the roughness of a non ideal surface. These can be accounted for by applying either the Wenzel or Cassie equations for homogeneous and heterogeneous surfaces respectively. In the context of this experiment we contend ourselves with the simpler model reflected in Young's equation (our samples are relatively planar).
+For dynamic situations (for example water running down a windowpane) the situation is further complicated. In this case one must differentiate between the advancing and receding contact angles. As with the previous complications we will focus on a system where such effect need not be considered i.e. a stationary drop.
 
 \subsection{Measurement Procedure}
 
-The contact angle measurements where performed optically by observing a droplet of deionized water on different samples prepared in the manner described in section II. For this purpose the the sample was placed on a three degree of freedom movable stage. 
+The contact angle measurements where performed optically by observing a droplet of deionized water on different samples prepared in the manner described in section II. For this purpose the the sample was placed on a three degree of freedom (linear) movable stage. The water droplets were provided by a servo driven syringe of deionized water. We setup the syringe to dispense 3 $\mu \ell$ of water. Subsequently we raised the sample until the drop made contact with, and participated onto the sample. 
 
-We measured directly a contact angle at least 5 points on each sample by a contact measurement device. Dropping a liquid on the surface of the sample and we plotted the liquid drop profiles and extrapolated the contact angles. Analyzing experiment data we calculated the mean values and the errors. We show the results in the next section.
+We measured the contact angle at least 5 times on each sample using the above mentioned contact angle measurement device. After dropping a liquid on the surface of the sample, we plotted the liquid drop profiles and extrapolated the contact angles. Subsequently we Analyzed experiment data by calculating the mean values and the errors. The results will be presented in the next section.
 
 \subsection{Results and Analysis}
+
+The results from the contact angle measurement are shown in figure \ref{fig:results}. Sample 1 is clearly more hydrophilic than Sample 2, as evidenced by the difference contact angle well beyond the error. As expected the mixed sample exhibited intermediate wetting characteristics. However the large error in the measurement does not permit any conclusions on which thiol contributes more to the wetting characteristics.
+
+\begin{figure}
+\centering
+\input{AnglePlot.tex}
+\caption{Results of the contact angle measurements, showing average and  respectively standard deviation or range}
+\label{fig:results}
+\end{figure}
+
+
+
+\subsubsection{Sources of Errors}
+
+There are several sources of errors which could explain the wide range of measured values such as surface roughness, water evaporation and incomplete relaxation. The last two sources are convoluted and compounded by operator timing and mode of operation as explained in the following.
+When the drop precipitates on the sample it must first relaxes in finite time to assume the equilibrium position, hence if the measurement is taken to early it will deviate toward a more hydrophobic angle.
+On the other hand if the drop is left on the surface too long the effects of evaporation become noticeable. In this case the sides remain fixed and the ape is lowered. This gives a more hydrophilic appearance.
+As the liquid drop profiles were taken from snapshots dynamic effects are negligible however the timing is crucial to the error. An early snapshot would introduce a incomplete relaxation effect, a late snapshot would induce a evaporation error. As the timing of the snapshot is manual this depends heavily on the operator hence the large variation in error.
+We believe this to be the largest source of error in our measurement, as the surface roughness should not change much at different points on the sample. Measurement accuracy and uniformity could be improved by precisely controlling the timing through automatization or reducing evaporation through climate control.
