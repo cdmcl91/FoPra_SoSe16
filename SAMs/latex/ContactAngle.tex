@@ -2,6 +2,14 @@
 
 A contact angle can be defined for a triple-phase interface, where a solid, a liquid and a gas or vapor phase meet at a single point and are at an equilibrium. This is the case for a liquid drop resting on a surface (static equilibrium) or a liquid in a pipe (dynamic equilibrium). The contact angle is the angle at the triple phase interface between the solid-gas interface and the tangent of the liquid-gas or liquid-vapor interface.
 
+\begin{figure}
+\centering
+\input{contact_angle.pdf_tex}
+\caption{Definition of contact angle for a water droplet on an ideal surface}
+\label{fig:contact_angle}
+\end{figure}
+
+
 \subsection{Underlying Theory}
 
 The contact angle is a useful measure of the wetting characteristics of a material. A low contact angle characterizes a hydrophilic surface, whereas a high contact angle characterizes a hydrophobic surface. 
@@ -19,7 +27,6 @@ at equilibrium we expect this change to be congruent to zero, hence we obtain th
 
 By eliminating the common factor $\Delta x$ we obtain a surface energy balance equation for the triple-phase boundary known as Young's equation:
 
-
 \begin{equation}
 \gamma{SG} = \gamma_{SL} + \gamma_{LG} \cos{\theta}
 \end{equation}
@@ -29,7 +36,9 @@ For dynamic situations (for example water running down a windowpane) the situati
 
 \subsection{Measurement Procedure}
 
-The contact angle measurements where performed optically by observing a droplet of deionized water on different samples prepared in the manner described in section II. For this purpose the the sample was placed on a three degree of freedom (linear) movable stage. The water droplets were provided by a servo driven syringe of deionized water. We setup the syringe to dispense 3 $\mu \ell$ of water. Subsequently we raised the sample until the drop made contact with, and participated onto the sample. 
+The contact angle measurements where performed optically by observing a droplet of deionized water on different samples prepared in the manner described in section II. For this purpose the the sample was placed on a three degree of freedom (linear) movable stage. The water droplets were provided by a servo driven syringe of deionized water (milipore 18.2 M$\Omega$ cm$^{2}$) . 
+%look up dI water
+We setup the syringe to dispense 3 $\mu \ell$ of water. Subsequently we raised the sample until the drop made contact with, and precipitated onto the sample. 
 
 We measured the contact angle at least 5 times on each sample using the above mentioned contact angle measurement device. After dropping a liquid on the surface of the sample, we plotted the liquid drop profiles and extrapolated the contact angles. Subsequently we Analyzed experiment data by calculating the mean values and the errors. The results will be presented in the next section.
 
@@ -44,12 +53,22 @@ The results from the contact angle measurement are shown in figure \ref{fig:resu
 \label{fig:results}
 \end{figure}
 
+% add thiol names
+We can therefore conclude that sample 1 is the the .... thiol, whereas sample 2 is the .... thiol.
 
 
 \subsubsection{Sources of Errors}
 
 There are several sources of errors which could explain the wide range of measured values such as surface roughness, water evaporation and incomplete relaxation. The last two sources are convoluted and compounded by operator timing and mode of operation as explained in the following.
 When the drop precipitates on the sample it must first relaxes in finite time to assume the equilibrium position, hence if the measurement is taken to early it will deviate toward a more hydrophobic angle.
-On the other hand if the drop is left on the surface too long the effects of evaporation become noticeable. In this case the sides remain fixed and the ape is lowered. This gives a more hydrophilic appearance.
+On the other hand if the drop is left on the surface too long the effects of evaporation become noticeable. In this case the sides remain fixed and the apex is lowered. This gives a more hydrophilic appearance. This phenomenon is shown in figure \ref{fig:evaporation}.
+
+\begin{figure}
+\centering
+\input{evaporation.pdf_tex}
+\caption{Evaporation leads to a smaller droplet and more hydrophilic appearance}
+\label{fig:evaporation}
+\end{figure}
+
 As the liquid drop profiles were taken from snapshots dynamic effects are negligible however the timing is crucial to the error. An early snapshot would introduce a incomplete relaxation effect, a late snapshot would induce a evaporation error. As the timing of the snapshot is manual this depends heavily on the operator hence the large variation in error.
 We believe this to be the largest source of error in our measurement, as the surface roughness should not change much at different points on the sample. Measurement accuracy and uniformity could be improved by precisely controlling the timing through automatization or reducing evaporation through climate control.
