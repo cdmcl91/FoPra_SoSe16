@@ -1,0 +1,93 @@
+# ----------- instrument configuration summary -----------
+# operator: Jonathan Becker <jonathan.becker@wsi.tum.de>
+# date: 21-Jun-2016 11:38:53
+# 
+# ------------ Device: Lockin_U -------------
+# driver: egg_7265.mdd, Interface: VISA-GPIB0-3
+# Model: 7260
+# bandwidth = 5.987500e-02
+# current_noise = 8.480000e-04
+# filt_slope = 24db/octace
+# filt_syncTC = 1
+# integration_done = 0
+# mode = Signal Recovery
+# osc_amplitude = 1
+# osc_freq = 111
+# range = 10mV
+# range_numeric = 1.000000e-02
+# ref_freq_meter = 111000
+# ref_harmonic = 1
+# ref_input = rear (external)
+# ref_mode = Single Reference / Virtual Reference
+# ref_phase = 0
+# sig_acgain = 1
+# sig_acgain_auto = 0
+# sig_coupling = AC
+# sig_fet = bipolar
+# sig_float = 0
+# sig_imode = off
+# sig_linefilter = off
+# sig_sample_rate = 0
+# sig_vmode = A
+# timeconstant = 2
+# 
+# ------------ Device: Lockin_Uh -------------
+# driver: egg_7265.mdd, Interface: VISA-GPIB0-2
+# Model: 7260
+# bandwidth = 5.987500e-02
+# current_noise = 0
+# filt_slope = 24db/octace
+# filt_syncTC = 1
+# integration_done = 0
+# mode = Signal Recovery
+# osc_amplitude = 1
+# osc_freq = 111
+# range = 10mV
+# range_numeric = 1.000000e-02
+# ref_freq_meter = 111000
+# ref_harmonic = 1
+# ref_input = internal
+# ref_mode = Single Reference / Virtual Reference
+# ref_phase = 0
+# sig_acgain = 0
+# sig_acgain_auto = 0
+# sig_coupling = AC
+# sig_fet = fet
+# sig_float = 0
+# sig_imode = off
+# sig_linefilter = off
+# sig_sample_rate = 0
+# sig_vmode = A
+# timeconstant = 2
+# 
+# ------------ Device: Magnet -------------
+# driver: lakeshore_625.mdd, Interface: VISA-GPIB0-22
+# Model: LSCI,MODEL625,6251105,1.0/1.0
+# current_B = 1.100000e-04
+# current_I = 1.200000e-03
+# current_V = 1.000000e-04
+# current_remoteV = 2.000000e-04
+# is_ramping = 0
+# limit_current = 60
+# limit_rate = 2.208000e-01
+# limit_voltage = 1
+# quench_parameter = 1,+2.0000
+# rate = 2.208000e-01
+# remote = Remote
+# setB = 0
+# setI = 0
+# setV = 1
+#
+#
+#--------------------------------------------------
+# B	U	Uh	
+# T	V	V	
+# Magnet	Lockin_U	Lockin_Uh	
+#--------------------------------------------------
+0	1.014e-05	0
+0.001	9.78e-06	0
+0.002	1.001e-05	1e-07
+0.003	1.013e-05	1e-07
+0.004	9.14e-06	3e-07
+0.005	9.53e-06	4e-07
+0.006	1.009e-05	5e-07
