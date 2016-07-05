@@ -13,7 +13,16 @@ A contact angle can be defined for a triple-phase interface, where a solid, a li
 \subsection{Underlying Theory}
 
 The contact angle is a useful measure of the wetting characteristics of a material. A low contact angle characterizes a hydrophilic surface, whereas a high contact angle characterizes a hydrophobic surface. 
-A drop resting on a smooth solid surface is an example of a static equilibrium triple-phase interface. The interfacial energies must therefore be in equilibrium, with gravity, and with each other. Let $\gamma_{LG}$, $\gamma_{SG}$ and $\gamma_{SL}$ be the respective liquid-gas, solid-gas and solid-liquid interfacial energies. We now consider an ideal solid-liquid-gas triple-phase boundary as depicted in figure \ref{fig:triple phase}, with $\theta$ the contact angle. Without loss of generality we consider a 2 dimensional system. To obtain the equilibrium contact angle we consider a small perturbation of the displayed system. We expand the liquid solid interface by a small distance $\Delta x$ and consider the changes in energy.
+
+\begin{figure}
+\centering
+\input{youngs_eq.pdf_tex}
+\caption{Triple phase boundary considers in the approximately linear regime}
+\label{fig:youngs_eq}
+\end{figure}
+
+
+A drop resting on a smooth solid surface is an example of a static equilibrium triple-phase interface. The interfacial energies must therefore be in equilibrium, with gravity, and with each other. Let $\gamma_{LG}$, $\gamma_{SG}$ and $\gamma_{SL}$ be the respective liquid-gas, solid-gas and solid-liquid interfacial energies. We now consider an ideal solid-liquid-gas triple-phase boundary as depicted in figure \ref{fig:youngs_eq}, with $\theta$ the contact angle. Without loss of generality we consider a 2 dimensional system. To obtain the equilibrium contact angle we consider a small perturbation of the displayed system. We expand the liquid solid interface by a small distance $\Delta x$ and consider the changes in energy.
 
 \begin{equation}
 \Delta E = \gamma_{SL}\, \Delta x + \gamma_{SG} \, ( - \Delta x) + \gamma_{LG} \cos{\theta} \, \Delta x
@@ -36,11 +45,33 @@ For dynamic situations (for example water running down a windowpane) the situati
 
 \subsection{Measurement Procedure}
 
-The contact angle measurements where performed optically by observing a droplet of deionized water on different samples prepared in the manner described in section II. For this purpose the the sample was placed on a three degree of freedom (linear) movable stage. The water droplets were provided by a servo driven syringe of deionized water (milipore 18.2 M$\Omega$ cm$^{2}$) . 
-%look up dI water
-We setup the syringe to dispense 3 $\mu \ell$ of water. Subsequently we raised the sample until the drop made contact with, and precipitated onto the sample. 
+The contact angle measurements where performed optically by observing a droplet of deionized water on different samples prepared in the manner described in section II. For this purpose the the sample was placed on a three degree of freedom (linear) movable stage. The water droplets were provided by a servo driven syringe of deionized water (18.2 M$\Omega$ cm). 
+We setup the syringe to dispense 3 $\mu L$ of water. Subsequently we raised the sample until the drop made contact with, and precipitated onto the sample. A digital camera attached was used to observe the droplet profiles.
+The observed drops for the three different samples are shown in figure \ref{fig:sample1}, \ref{fig:sample2} and \ref{fig:sample1plus2}. We can already observe slight variations in the profile of the drops.
 
-We measured the contact angle at least 5 times on each sample using the above mentioned contact angle measurement device. After dropping a liquid on the surface of the sample, we plotted the liquid drop profiles and extrapolated the contact angles. Subsequently we Analyzed experiment data by calculating the mean values and the errors. The results will be presented in the next section.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\columnwidth]{sample1.jpg}
+\caption{Image of a droplet on Sample 1}
+\label{fig:sample1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\columnwidth]{sample2.jpg}
+\caption{Image of a droplet on Sample 2}
+\label{fig:sample2}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\columnwidth]{sample1plus2.jpg}
+\caption{Image of a droplet on mixed sample (1+2)}
+\label{fig:sample1plus2}
+\end{figure}
+
+We measured the contact angle at least 5 times on each sample using the above mentioned contact angle measurement device. After dropping a liquid on the surface of the sample, we plotted the liquid drop profiles and extrapolated the contact angles from the images provided by the camera. Subsequently we Analyzed experiment data by calculating the mean values and the errors. The quantitative results will be presented in the next section.
 
 \subsection{Results and Analysis}
 
@@ -54,8 +85,15 @@ The results from the contact angle measurement are shown in figure \ref{fig:resu
 \end{figure}
 
 % add thiol names
-We can therefore conclude that sample 1 is the the .... thiol, whereas sample 2 is the .... thiol.
+We can therefore conclude that sample 1 is the the 2-Phenylethane, whereas sample 2 is the 11-mercaptoundecanol. Their respective chemical structures are shown in figure \ref{11mer}.
 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\columnwidth]{11mer.eps}
+\caption{(a) The structure of 2-Phenylethanethiol. (b) The structure of 11-mercaptoundecanol. }
+\label{11mer}
+\end{figure}
 
 \subsubsection{Sources of Errors}
 
@@ -70,5 +108,5 @@ On the other hand if the drop is left on the surface too long the effects of eva
 \label{fig:evaporation}
 \end{figure}
 
-As the liquid drop profiles were taken from snapshots dynamic effects are negligible however the timing is crucial to the error. An early snapshot would introduce a incomplete relaxation effect, a late snapshot would induce a evaporation error. As the timing of the snapshot is manual this depends heavily on the operator hence the large variation in error.
-We believe this to be the largest source of error in our measurement, as the surface roughness should not change much at different points on the sample. Measurement accuracy and uniformity could be improved by precisely controlling the timing through automatization or reducing evaporation through climate control.
+As the liquid drop profiles were taken from snapshots dynamic effects are negligible however the timing is crucial to the error. An early snapshot would introduce a incomplete relaxation effect, a late snapshot would induce a evaporation error. As the timing of the snapshot is manual this depends heavily on the operator hence the large variation in error. Furthermore we took turns operating the device hence individual mode of operation will have affected the measurement too.
+We believe this to be the largest source of error in our measurement, as the surface roughness should not change much at different points on the sample. Measurement accuracy and uniformity could be improved by precisely controlling the timing through automatization or reducing evaporation through climate control. This would make the measurement less operator dependent as well.
